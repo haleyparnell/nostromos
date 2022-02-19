@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nostromos</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#home" id="navbar__logo">Nostromos</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page">Profile</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#services" class="navbar__links" id="services-page"
+              >Dashboard</a
+            >
+          </li>
+          <li class="navbar__btn">
+            <a href="#sign-up" class="button" id="signup">Save Image</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+      <div class="hero__container">
+        <h1 class="hero__heading">Build your Personal <span>Music Dashboard</span></h1>
+        <p class="hero__description">Track Listening Habits</p>
+        <button class="main__btn"><a href="#">Login to Spotify</a></button>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="main" id="about">
+      <div class="main__container">
+        <div class="main__img--container">
+          <div class="main__img--card"><i class="fas fa-layer-group"></i></div>
+        </div>
+        <div class="main__content">
+          <h1>Username,</h1>
+          <h2>You have listened to # minutes of music this year.</h2>
+          <p>That's # trips around the Earth.</p>
+          <button class="main__btn"><a href="#">View full breakdown.</a></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services" id="services">
+      <h1>Your Music Dashboard</h1>
+      <div class="services__wrapper">
+        <div class="services__card">
+          <h2>Top Artists</h2>
+          <div class="services__btn"><button>View</button></div>
+        </div>
+        <div class="services__card">
+          <h2>Top Songs</h2>
+          <div class="services__btn"><button>View</button></div>
+        </div>
+        <div class="services__card">
+          <h2>Top Genres</h2>
+          <div class="services__btn"><button>View</button></div>
+        </div>
+        <div class="services__card">
+          <h2>Time Capsule</h2>
+          <div class="services__btn"><button>View</button></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="main" id="sign-up">
+      <div class="main__container">
+        <div class="main__content">
+          <h2>Share with your friends!</h2>
+          <button class="main__btn"><a href="#">Save Image</a></button>
+        </div>
+        <div class="main__img--container">
+          <div class="main__img--card" id="card-2">
+            <i class="fas fa-users"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
