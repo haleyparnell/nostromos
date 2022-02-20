@@ -30,8 +30,9 @@
   }
   
   #navbar__logo {
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background: #833ab4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -41,7 +42,8 @@
     align-items: center;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
   }
   
   .navbar__menu {
@@ -63,6 +65,7 @@
     text-decoration: none;
     height: 100%;
     transition: all 0.3s ease;
+    font-weight: bolder;
   }
   
   .navbar__btn {
@@ -332,7 +335,7 @@
   }
   
   .main__btn {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     background: #833ab4;
     background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
     background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
@@ -491,7 +494,7 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     margin-bottom: 5rem;
-    font-size: 2.5rem;
+    font-size: 5rem;
   }
   
   .services__wrapper {
@@ -563,6 +566,7 @@
     border-radius: 4px;
     background: #131313;
     font-size: 1rem;
+    font-weight: bold;
   }
   
   .services__card button:hover {
